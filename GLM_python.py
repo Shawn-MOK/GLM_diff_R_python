@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
 
+dat2=pd.read_csv("/Users/uqxmo/HF/LDL_CAD/SCORE_LDL_CAD.txt",sep="\s+",header=0)
 dat2=dat2.head(20)
 X=dat2['SCORESUM_LDL']
 X=sm.add_constant(X) ## Design the matrix add a column of constant
